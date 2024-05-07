@@ -26,11 +26,10 @@ fs.writeFile(path.resolve(process.cwd(), 'boiler.settings.toml'), toml.stringify
     console.error('🚨 Error' + err);
   } else {
     console.log(`🙌 Config file generated in ${process.cwd()}`);
-    console.log(process.cwd())
   }
 });
 
-console.log(__dirname);
+console.log('‼️ Root dir ' + path.resolve('./'));
 
 // program
 //   .version("1.0.0")
@@ -39,6 +38,6 @@ console.log(__dirname);
 //   .option("-n, --name <type>", "Add your name")
 //   .action((options) => {
 //     console.log(chalk.blue(`Hello, ${options.name}!`));
-//   });
+// });
 
 program.parse(process.argv);
