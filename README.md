@@ -35,4 +35,4 @@ Currently Boiler will only generate all the files in the same folder. I.e. it as
 ```
 
 ### ToDo
-[] Have Boiler find package.json and create the config as a sibling without needing to _run_ Boiler in a specific directory for setup.
+- [ ] Have Boiler find package.json and create the config as a sibling without needing to _run_ Boiler in a specific directory for setup.
