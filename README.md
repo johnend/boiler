@@ -35,4 +35,6 @@ Currently Boiler will only generate all the files in the same folder. I.e. it as
 ```
 
 ### ToDo
+- [ ] Have some logic to branch if boiler has been run before i.e.
+    - As a web developer building a project, when running boiler after the first time and a boiler config file exists, then boiler should only ask for a name for the component and not ask the config questions. Then, after providing the name boiler should generate the appropriate files based on the config.
 - [ ] Have Boiler find package.json and create the config as a sibling without needing to _run_ Boiler in a specific directory for setup.
