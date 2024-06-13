@@ -6,7 +6,16 @@ when writing new components, and to help scaffold projects more easily.
 
 ## Installation
 
-`npm i -g boiler`
+Boiler is not on the npm registry at this time, as it is still a work in
+progress. To install and use locally please clone the repo and link the package.
+
+```shell
+gh repo clone johnend/boiler
+```
+
+After cloning run ` npm install` and finally within the repo run `npm link`
+
+Then run `boiler` from your project's root directory.
 
 ## Usage
 
@@ -38,10 +47,11 @@ assumes your component folders are structured like this:
     └── components/
         └── button/ --example
             ├── button.tsx
-            ├── button.test.tsx --if test files are co-located (configurable)
+            ├── button.test.tsx --if test files are co-located (future
+enhancement)
             ├── button.stories.tsx --if using storybook (configurable)
             ├── button.module.scss --if using scss modules (configurable)
-            └── index.js -- if this is a sub-component of a UI component library (configurable)
+            └── index.js -- if this is a sub-component of a UI component library (future enhancement)
 ```
 
 ### ToDo
