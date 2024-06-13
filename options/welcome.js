@@ -20,5 +20,5 @@ First I need to ask you a few questions about your project.
 This will help me generate the right files for you!
 `
 
-const welcome = console.log(greeting)
+const welcome = () => console.log(greeting)
 export default welcome;
