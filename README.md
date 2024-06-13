@@ -20,7 +20,7 @@ Then run `boiler` from your project's root directory.
 ## Usage
 
 Your should run `boiler` for the first time in your front-end's root directory
-i.e. in the same directory as your project.json file.
+i.e. in the same directory as your `project.json` file or `.git` folder.
 
 On first run Boiler will:
 
@@ -30,15 +30,13 @@ On first run Boiler will:
     to the root directory, which you should run boiler in),
 - generate a config file.
 
-Running `boiler <component name>` in a different directory (after setup) will
-create a folder structure based on your config, like the example below.
+On subsequent runs:
 
-On subsequent runs Boiler will (when run in a parent directory):
+`boiler` will ask
+you what the name of your component is and then generate a directory, and the
+components, defined in your config.
 
-- create a component folder,
-- create files within that folder based on the config settings,
-
-Currently Boiler will only generate all the files in the same folder. I.e. it
+Currently Boiler will only generate all the files in the same folder i.e. it
 assumes your component folders are structured like this:
 
 ```
@@ -46,11 +44,11 @@ assumes your component folders are structured like this:
 └── src/
     └── components/
         └── button/ --example
-            ├── button.tsx
-            ├── button.test.tsx --if test files are co-located (future
+            ├── button.{j/t}sx
+            ├── button.test.{j/t}sx --if test files are co-located (future
 enhancement)
-            ├── button.stories.tsx --if using storybook (configurable)
-            ├── button.module.scss --if using scss modules (configurable)
+            ├── button.stories.{j/t}sx --if using storybook (configurable)
+            ├── button.module.{s}css --if using scss modules (configurable)
             └── index.js -- if this is a sub-component of a UI component library (future enhancement)
 ```
 
