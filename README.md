@@ -19,8 +19,9 @@ Then run `boiler` from your project's root directory.
 
 ## Usage
 
-Your should run `boiler` for the first time in your front-end's root directory
-i.e. in the same directory as your `project.json` file or `.git` folder.
+Your should run `boiler` for the first time in your front-end application's root
+directory i.e. in the same directory as your `project.json` file or `.git`
+folder.
 
 On first run Boiler will:
 
@@ -29,12 +30,13 @@ On first run Boiler will:
     storybook and where you UI components directory is (this should be relative
     to the root directory, which you should run boiler in),
 - generate a config file.
+  - if you are working on a team you can commit this file so that the settings
+    are consistent for each engineer.
 
 On subsequent runs:
 
-`boiler` will ask
-you what the name of your component is and then generate a directory, and the
-components, defined in your config.
+`boiler` will ask you what the name of your component is and then generate a
+directory, and the components, defined in your config.
 
 Currently Boiler will only generate all the files in the same folder i.e. it
 assumes your component folders are structured like this:
@@ -62,6 +64,6 @@ enhancement)
 - [ ] Have Boiler find package.json and create the config as a sibling without
       needing to _run_ Boiler in a specific directory for setup.
 - [ ] Remove the need to run Boiler from project root directory (search up until
-.git is found)
+      .git is found)
 - [ ] Look for a `components` directory and check, during setup, if this is what
-  should be used
+      should be used
