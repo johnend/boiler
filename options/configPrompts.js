@@ -78,7 +78,7 @@ export const prompt_storybook = async () =>
       {
         name: "Yes, please",
         value: true,
-        description: `Generates *.stories.${prompt_react_flavour == "react" ? "jsx" : "tsxv"} files`,
+        description: `Generates *.stories.${prompt_react_flavour == "react" ? "jsx" : "tsx"} files`,
       },
       {
         name: "No, thanks",
